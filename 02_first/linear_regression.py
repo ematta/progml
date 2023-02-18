@@ -29,7 +29,7 @@ def train(X, Y, iterations, lr):
 X, Y = np.loadtxt('pizza.txt', skiprows=1, unpack=True)
 
 # Train the system
-w, b = train(X, Y, iterations=10000, lr=0.01)
+w, b = train(X, Y, iterations=1000000, lr=0.0001)
 print("\nw=%.3f, b=%.3f" % (w, b))
 
 # Predict
